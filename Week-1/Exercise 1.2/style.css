@@ -20,6 +20,7 @@
     background-color: black;
     opacity: 80%;
     margin-left: 1.8rem;
+    display: flex;
 }
 
 .image {
@@ -31,18 +32,28 @@
   }
   img {
     width: 15vw;
-    height: 20vh;
+    height: 25vh;
     position: relative;
     padding-left: 10px;
+    margin-top: 0rem;
   }
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
 
 .album {
     color: white;
     display: flex;
+    flex-direction: column;
+    font-size: xx-small;
 }
 
 .features {
     color: white;
+    display: flex;
+    font-size: x-small;
 }
 
 .songs {
@@ -54,4 +65,12 @@
     opacity: 80%;
     display: flex;
     max-height: 5rem;   
+}
+
+.title {
+    font-size: x-large;
+}
+
+.features > .fa-solid {
+    padding-right: 1rem;
 }
