@@ -81,7 +81,7 @@ img {
     margin-left: 1rem;
 }
 
-.song-functionality {
+.song-actions {
     display: flex;
     justify-content: right;
     margin-left: 120px;
@@ -111,6 +111,6 @@ table {
     height: 7vh;
 }
 
-.song-functionality i {
+.song-actions i {
     margin-right: 100px;
 }
