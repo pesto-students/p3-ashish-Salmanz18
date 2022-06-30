@@ -11,12 +11,14 @@ img {
     width: 96vw;
 }
 
-@media (min-width: 900px) { .container {
-    display: flex;
-} img {
-    width: 50vw;
-    height: 50vh;
-    }
+@media (min-width: 900px) { 
+    .container {
+        display: flex;
+    } 
+        img {
+            width: 50vw;
+            height: 50vh;
+        }
 }
 
 .description {
