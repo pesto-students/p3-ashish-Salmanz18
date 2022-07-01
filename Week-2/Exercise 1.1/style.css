@@ -6,25 +6,23 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+}
+
 img {
-    height: 50vh;
     width: 96vw;
 }
 
 @media (min-width: 900px) { 
-    .container {
-        display: flex;
-    } 
-        img {
-            width: 50vw;
-            height: 50vh;
-        }
-}
+.container {
+    display: flex;
+} 
 
-.description {
-    background-color: whitesmoke;
-    margin-left: 10px;
-    margin-right: 10px;
+img {
+    width: 50vw;
+    margin-top: 50px;
+    }
 }
 
 .articles {
@@ -33,7 +31,9 @@ img {
 }
 
 .article {
-    background-color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
 }
 
 .sign-up {
