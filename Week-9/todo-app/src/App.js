@@ -9,10 +9,16 @@ function App() {
         { task: 'Practice DSA', completed: false },
         { task: 'Make Projects', completed: false },
     ]);
+
+    const createTodoItem = (task) => {
+        const newTodoList = [...todoItems, { task, completed: false }];
+        setTodoItems(newTodoList);
+    };
+
     return (
         <div className='App'>
             Todo-App
-            <AddTodo />
+            <AddTodo createTodoItem={createTodoItem} />
             {todoItems.map((item, index) => (
                 <TodoList key={index} index={index} item={item} />
             ))}
