@@ -1,4 +1,5 @@
 import React from 'react';
+import '../App.css';
 
 const TodoList = ({ item, index, deleteTodoItem, completeTodoItem }) => {
     return (
@@ -10,7 +11,7 @@ const TodoList = ({ item, index, deleteTodoItem, completeTodoItem }) => {
                 {item.task}
             </li>
 
-            <div>
+            <div className='btns'>
                 <button onClick={() => completeTodoItem(index)}>Status</button>
                 <button onClick={() => deleteTodoItem(index)}>X</button>
             </div>

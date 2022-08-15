@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../App.css';
 
 const AddTodo = ({ createTodoItem }) => {
     const [value, setValue] = useState('');
@@ -13,7 +14,7 @@ const AddTodo = ({ createTodoItem }) => {
     };
 
     return (
-        <form>
+        <form className='add-todo'>
             <input
                 type='text'
                 placeholder='Add Todo'

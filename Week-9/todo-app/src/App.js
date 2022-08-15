@@ -30,18 +30,20 @@ function App() {
     };
 
     return (
-        <div className='App'>
-            Todo-App
-            <AddTodo createTodoItem={createTodoItem} />
-            {todoItems.map((item, index) => (
-                <TodoList
-                    key={index}
-                    index={index}
-                    item={item}
-                    deleteTodoItem={deleteTodoItem}
-                    completeTodoItem={completeTodoItem}
-                />
-            ))}
+        <div>
+            <div className='title'>Todo-App</div>
+            <div className='App'>
+                <AddTodo createTodoItem={createTodoItem} />
+                {todoItems.map((item, index) => (
+                    <TodoList
+                        key={index}
+                        index={index}
+                        item={item}
+                        deleteTodoItem={deleteTodoItem}
+                        completeTodoItem={completeTodoItem}
+                    />
+                ))}
+            </div>
         </div>
     );
 }
