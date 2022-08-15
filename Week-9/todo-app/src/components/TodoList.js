@@ -1,10 +1,19 @@
 import React from 'react';
 
-const TodoList = ({ item, index, deleteTodoItem }) => {
+const TodoList = ({ item, index, deleteTodoItem, completeTodoItem }) => {
     return (
         <div className='todo-list'>
-            <li>{item.task}</li>
-            <button onClick={() => deleteTodoItem(index)}>X</button>
+            <li
+                style={{
+                    textDecoration: item.completed ? 'line-through' : '',
+                }}>
+                {item.task}
+            </li>
+
+            <div>
+                <button onClick={() => completeTodoItem(index)}>Status</button>
+                <button onClick={() => deleteTodoItem(index)}>X</button>
+            </div>
         </div>
     );
 };

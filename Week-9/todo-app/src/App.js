@@ -21,6 +21,14 @@ function App() {
         setTodoItems(newTodoList);
     };
 
+    const completeTodoItem = (index) => {
+        const newTodoList = [...todoItems];
+        newTodoList[index].completed === false
+            ? (newTodoList[index].completed = true)
+            : (newTodoList[index].completed = false);
+        setTodoItems(newTodoList);
+    };
+
     return (
         <div className='App'>
             Todo-App
@@ -31,6 +39,7 @@ function App() {
                     index={index}
                     item={item}
                     deleteTodoItem={deleteTodoItem}
+                    completeTodoItem={completeTodoItem}
                 />
             ))}
         </div>
