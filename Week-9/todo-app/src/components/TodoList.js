@@ -12,7 +12,9 @@ const TodoList = ({ item, index, deleteTodoItem, completeTodoItem }) => {
             </li>
 
             <div className='btns'>
-                <button onClick={() => completeTodoItem(index)}>Status</button>
+                <button onClick={() => completeTodoItem(index)}>
+                    {item.completed ? 'InComplete' : 'Complete'}
+                </button>
                 <button onClick={() => deleteTodoItem(index)}>X</button>
             </div>
         </div>
