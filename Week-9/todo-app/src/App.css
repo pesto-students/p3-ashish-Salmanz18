@@ -4,8 +4,10 @@
 }
 .App {
     text-align: center;
+    margin: auto;
     margin-top: 50px;
     border: 2px black solid;
+    width: 600px;
 }
 
 .todo-list {
