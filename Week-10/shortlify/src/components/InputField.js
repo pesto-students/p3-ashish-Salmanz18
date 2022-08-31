@@ -13,6 +13,7 @@ const InputField = ({ createShortUrl }) => {
             <button
                 onClick={() => {
                     createShortUrl(inputUrl);
+                    setInputUrl('');
                 }}>
                 Submit URL
             </button>
