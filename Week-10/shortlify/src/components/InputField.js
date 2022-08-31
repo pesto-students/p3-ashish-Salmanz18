@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-function InputField() {
-    const [input, setInput] = useState('');
+const InputField = ({ createShortUrl }) => {
+    const [inputUrl, setInputUrl] = useState('');
     return (
         <>
             <input
-                value={input}
+                value={inputUrl}
                 onChange={(e) => {
-                    setInput(e.target.value);
+                    setInputUrl(e.target.value);
                 }}
             />
-            <button>Submit URL</button>
+            <button
+                onClick={() => {
+                    createShortUrl(inputUrl);
+                }}>
+                Submit URL
+            </button>
         </>
     );
-}
+};
 
 export default InputField;
