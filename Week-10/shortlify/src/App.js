@@ -2,6 +2,7 @@ import './App.css';
 import { useState } from 'react';
 import InputField from './components/InputField';
 import ShortenedLink from './components/ShortenedLink';
+import BackgroundAnimate from './components/BackgroundAnimate';
 
 const url = 'https://api.shrtco.de/v2/shorten?';
 
@@ -22,8 +23,8 @@ export const App = () => {
         <div className='App'>
             <h1>Shortify your URL</h1>
             <InputField createShortUrl={createShortUrl} />
-            <hr />
             <ShortenedLink shortLink={shortLink} />
+            <BackgroundAnimate />
         </div>
     );
 };
