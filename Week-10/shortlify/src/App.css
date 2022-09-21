@@ -1,0 +1,110 @@
+.App {
+    text-align: center;
+}
+
+/* Animated Background */
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #9ea3ff;
+    overflow: hidden;
+    z-index: -1;
+}
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 19s linear infinite;
+}
+
+.background li:nth-child(0) {
+    left: 74%;
+    width: 147px;
+    height: 147px;
+    bottom: -147px;
+    animation-delay: 1s;
+}
+.background li:nth-child(1) {
+    left: 35%;
+    width: 119px;
+    height: 119px;
+    bottom: -119px;
+    animation-delay: 3s;
+}
+.background li:nth-child(2) {
+    left: 15%;
+    width: 112px;
+    height: 112px;
+    bottom: -112px;
+    animation-delay: 3s;
+}
+.background li:nth-child(3) {
+    left: 14%;
+    width: 150px;
+    height: 150px;
+    bottom: -150px;
+    animation-delay: 3s;
+}
+.background li:nth-child(4) {
+    left: 54%;
+    width: 136px;
+    height: 136px;
+    bottom: -136px;
+    animation-delay: 10s;
+}
+.background li:nth-child(5) {
+    left: 79%;
+    width: 130px;
+    height: 130px;
+    bottom: -130px;
+    animation-delay: 17s;
+}
+.background li:nth-child(6) {
+    left: 60%;
+    width: 139px;
+    height: 139px;
+    bottom: -139px;
+    animation-delay: 17s;
+}
+.background li:nth-child(7) {
+    left: 65%;
+    width: 143px;
+    height: 143px;
+    bottom: -143px;
+    animation-delay: 15s;
+}
+.background li:nth-child(8) {
+    left: 84%;
+    width: 150px;
+    height: 150px;
+    bottom: -150px;
+    animation-delay: 8s;
+}
+.background li:nth-child(9) {
+    left: 12%;
+    width: 108px;
+    height: 108px;
+    bottom: -108px;
+    animation-delay: 25s;
+}
